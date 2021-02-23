@@ -1,1 +1,101 @@
-erg
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #8F9CB3;
+}
+
+#content-box{
+  position: relative;
+  margin-top: 300px;
+  width: 600px;
+  height: 300px;
+  background: #8F9CB3;
+}
+
+#quatrefoil-l1{
+  position:absolute;
+  top: 10px;
+  left: 115px;
+  height: 200px;
+  width: 200px;
+  background-color: #08F7FE;
+  border-radius: 50%;
+  animation-name: color-4;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#quatrefoil-r1{
+  position:absolute;
+  top: 10px;
+  left: 285px;
+  height: 200px;
+  width: 200px;
+  background-color: #09FBD3;
+  border-radius: 50%;
+  animation-name: color-3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#quatrefoil-l2{
+  position:absolute;
+  top: 190px;
+  left: 115px;
+  height: 200px;
+  width: 200px;
+  background-color: #FE53BB;
+  border-radius: 50%;
+  animation-name: color-1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#quatrefoil-r2{
+  position:absolute;
+  top: 190px;
+  left: 285px;
+  height: 200px;
+  width: 200px;
+  background-color: #F5D300;
+  border-radius: 50%;
+  animation-name: color-2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+div:hover{
+  animation-direction: reverse;
+}
+
+@keyframes color-1 {
+  0%   {background-color: #08F7FE;}
+  25%  {background-color:  #09FBD3;}
+  50%  {background-color:  #F5D300;}
+  75%  {background-color:  #FE53BB;}
+  100% {background-color: #08F7FE;}
+}
+
+@keyframes color-2 {
+  0%   {background-color:  #09FBD3;}
+  25%  {background-color:  #F5D300;}
+  50%  {background-color:  #FE53BB;}
+  75%  {background-color:  #08F7FE;}
+  100% {background-color:  #09FBD3;}
+}
+
+@keyframes color-3 {
+  0%   {background-color:  #F5D300;}
+  25%  {background-color:  #FE53BB;}
+  50%  {background-color:  #08F7FE;}
+  75%  {background-color:  #09FBD3;}
+  100% {background-color:  #F5D300;}
+}
+
+@keyframes color-4 {
+  0%   {background-color:  #FE53BB;}
+  25%  {background-color: #08F7FE;}
+  50%  {background-color: #09FBD3;}
+  75%  {background-color:  #F5D300;}
+  100% {background-color: #FE53BB;}
+}
